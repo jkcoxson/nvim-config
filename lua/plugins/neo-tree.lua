@@ -15,5 +15,8 @@ return {
 				never_show = {},
 			},
 		},
+		window = {
+			width = 25,
+		},
 	},
 }
