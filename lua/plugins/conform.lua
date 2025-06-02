@@ -13,6 +13,11 @@ return {
 			desc = "Format Injected Langs",
 		},
 	},
+	format_on_save = {
+		-- These options will be passed to conform.format()
+		timeout_ms = 500,
+		lsp_format = "fallback",
+	},
 	opts = function()
 		---@type conform.setupOpts
 		local opts = {
@@ -27,6 +32,7 @@ return {
 				fish = { "fish_indent" },
 				sh = { "shfmt" },
 				html = { "htmlbeautifier" },
+				swift = { "swiftformat" },
 			},
 			-- The options you set here will be merged with the builtin formatters.
 			-- You can also define any custom formatters here.
