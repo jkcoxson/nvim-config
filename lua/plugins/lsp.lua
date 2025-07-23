@@ -11,7 +11,9 @@ return {
 		config = function(_, opts)
 			-- swift setup
 			local lspconfig = require("lspconfig")
-			lspconfig.sourcekit.setup({})
+			lspconfig.sourcekit.setup({
+				filetypes = { "swift", "objc", "objcpp" },
+			})
 
 			vim.api.nvim_create_autocmd("LspAttach", {
 				desc = "LSP Actions",
