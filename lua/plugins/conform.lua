@@ -33,6 +33,7 @@ return {
 				sh = { "shfmt" },
 				html = { "htmlbeautifier" },
 				swift = { "swiftformat" },
+				xml = { "xmlformatter" },
 			},
 			-- The options you set here will be merged with the builtin formatters.
 			-- You can also define any custom formatters here.
