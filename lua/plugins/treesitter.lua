@@ -13,13 +13,4 @@ return {
 			return opts
 		end,
 	},
-	{
-		-- nvim-treesitter is on the `master` lineage (LazyVim uses the master API:
-		-- nvim-treesitter.configs, textobjects.move). textobjects defaulted to its
-		-- `main` branch, which removed the `textobjects/` modules entirely, so
-		-- LazyVim's config errors with "module 'nvim-treesitter.textobjects.move'
-		-- not found". Pin textobjects to `master` to match.
-		"nvim-treesitter/nvim-treesitter-textobjects",
-		branch = "master",
-	},
 }
